@@ -1,1 +1,2 @@
-console.log('This would be the main JS file.');
+$time = $('time');
+$time.text(moment($time.attr('pubdate')).fromNow());
