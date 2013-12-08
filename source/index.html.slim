@@ -2,20 +2,26 @@
 pageable: true
 per_page: 10
 ---
-- if paginate && num_pages > 1
-  p
-    | Page #{page_number} of #{num_pages}
-  - if prev_page
-    p= link_to 'Previous page', prev_page
-- page_articles.each_with_index do |article, i|
-  h2
-    = link_to article.title, article
-    span= article.date.strftime('%b %e')
-  /!
-    | use article.summary(250) if you have Nokogiri available to show just
-    | the first 250 characters
-  = article.body
-- if paginate
-  - if next_page
-    p= link_to 'Next page', next_page
+- main_post = blog.articles.first
+- if main_post
+  article
+    h1= main_post.title
+    time pubdate="#{main_post.date.strftime('%Y-%m-%d')}" = main_post.date.strftime('%e %b %y')
+    address Emery A. Miller
+    p= main_post.body
 
+  - blog.articles[1..5].each do |blog_article|
+    article
+      h1= blog_article.title
+      time pubdate="#{blog_article.date.strftime('%Y-%m-%d')}" = blog_article.date.strftime('%e %b %y')
+      address Emery A. Miller
+      p= blog_article.summary
+
+  - if paginate && num_pages > 1
+    ul.pager
+      - if prev_page
+        li.previous
+          = link_to '&larr; Older', prev_page
+      - if next_page
+        li.next
+          = link_to 'Newer &rarr;', next_page
