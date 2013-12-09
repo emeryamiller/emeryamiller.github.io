@@ -3,6 +3,10 @@ title: Know the limits of OpenDNS and Google when protecting your loved ones on 
 date: 2013-12-08 16:55 UTC
 tags: opendns google protect online
 ---
+# Know the limits of OpenDNS and Google when protecting your loved ones on the internet
+<time pubdate="2013-12-08">8 Dec 2013</time>
+<address>Emery A. Miller</address>
+
 ## TL,DR
 - [OpenDNS](http://www.opendns.com) cannot protect you from the pornographic images Google caches on it's site
 - Shockingly, this is Google's default behaviour
