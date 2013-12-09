@@ -14,11 +14,15 @@
     <link rel="alternate" href="http://blog.url.com/2013/protecting-your-family-online-opendns-vs-google.html"/>
     <id>http://blog.url.com/2013/protecting-your-family-online-opendns-vs-google.html</id>
     <published>2013-12-08T16:55:00Z</published>
-    <updated>2013-12-08T17:40:12-05:00</updated>
+    <updated>2013-12-08T19:57:16-05:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;h2 id="tldr"&gt;TL,DR&lt;/h2&gt;
+    <content type="html">&lt;h1 id="know-the-limits-of-opendns-and-google-when-protecting-your-loved-ones-on-the-internet"&gt;Know the limits of OpenDNS and Google when protecting your loved ones on the internet&lt;/h1&gt;
+&lt;time pubdate="2013-12-08"&gt;8 Dec 2013&lt;/time&gt;
+&lt;address&gt;Emery A. Miller&lt;/address&gt;
+
+&lt;h2 id="tldr"&gt;TL,DR&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href="http://www.opendns.com"&gt;OpenDNS&lt;/a&gt; cannot protect you from the pornographic images Google caches on it's site&lt;/li&gt;
   &lt;li&gt;Shockingly, this is Google's default behaviour&lt;/li&gt;

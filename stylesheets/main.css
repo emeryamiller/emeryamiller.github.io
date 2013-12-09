@@ -32,14 +32,14 @@ articlefirst-child h1 {
   font-weight: 100;
   font-size: 45px;
 }
-article time {
+img {
+  display: block;
+  margin: 5px 0px 5px 0px;
+}
+time {
   color: #808080;
   font-size: smaller;
 }
-article address {
+address {
   display: none;
-}
-article img {
-  display: block;
-  margin: 5px 0px 5px 0px;
 }
