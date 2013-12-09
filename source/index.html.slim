@@ -1,0 +1,24 @@
+---
+pageable: true
+per_page: 10
+---
+- main_post = blog.articles.first
+- if main_post
+  article
+    p= main_post.body
+
+  - blog.articles[1..5].each do |blog_article|
+    article
+      h1= blog_article.title
+      time pubdate="#{blog_article.date.strftime('%Y-%m-%d')}" = blog_article.date.strftime('%e %b %y')
+      address Emery A. Miller
+      p= blog_article.summary
+
+  - if paginate && num_pages > 1
+    ul.pager
+      - if prev_page
+        li.previous
+          = link_to '&larr; Older', prev_page
+      - if next_page
+        li.next
+          = link_to 'Newer &rarr;', next_page

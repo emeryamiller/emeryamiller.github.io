@@ -1,0 +1,20 @@
+| <!doctype html>
+html
+  head
+    meta charset="utf-8"
+    meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible"
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.css"
+    link rel="stylesheet" type="text/css" href="/stylesheets/main.css"
+    title
+      | Explorations#{' - ' + current_article.title unless current_article.nil?}
+  body
+    main.container role="main"
+      .jumbotron
+        h1 Explorations
+        p A blog about stuff that matters to me (and yes, it needs some UI work)
+      = yield
+    script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"
+    script src="javascripts/bootstrap.js"
+    script src="javascripts/moment.min.js"
+    script src="javascripts/main.js"
